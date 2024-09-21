@@ -35,7 +35,7 @@ services:
       BASE_URL: ${BASE_URL:-http://example.com}
       SECRET_KEY_BASE: ${SECRET_KEY_BASE:-pass1}
       TOTP_VAULT_KEY: ${TOTP_VAULT_KEY:-pass2}
-      MB_DB_HOST: postgres
+      PORT: ${PORT:-7000}
 
 volumes:
   db-data:
