@@ -31,6 +31,11 @@ services:
       - plausible_events_db
     ports:
       - 127.0.0.1:7000:7000
+    environment:
+      BASE_URL: ${BASE_URL:-http://example.com}
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE:-pass1}
+      TOTP_VAULT_KEY: ${TOTP_VAULT_KEY:-pass2}
+      MB_DB_HOST: postgres
 
 volumes:
   db-data:
