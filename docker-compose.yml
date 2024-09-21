@@ -36,6 +36,7 @@ services:
       SECRET_KEY_BASE: ${SECRET_KEY_BASE:-pass1}
       TOTP_VAULT_KEY: ${TOTP_VAULT_KEY:-pass2}
       PORT: ${PORT:-7000}
+      LISTEN_IP: ${LISTEN_IP:-127.0.0.1}
 
 volumes:
   db-data:
